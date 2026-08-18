@@ -7,7 +7,7 @@
   <meta name="description" content="Ghana's premier fitness app. Book gym classes, find personal trainers, and track your fitness journey.">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
   <style>
     * {
@@ -474,14 +474,11 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.06);
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
 
     .pricing-features li::before {
-      content: '✓';
-      color: var(--green);
-      font-weight: 900;
-      flex-shrink: 0;
+      content: none;
     }
 
     .pricing-btn {
@@ -664,7 +661,7 @@
       style="height: 40px; width: auto; object-fit: contain;"
     />
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-      <i data-lucide="menu" style="width:24px;height:24px;"></i>
+      <i class="ph-bold ph-list" style="font-size:24px;"></i>
     </button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#features">Features</a></li>
@@ -673,8 +670,8 @@
       <li><a href="#portals">For Gyms</a></li>
       <li>
         <a href="#download" class="nav-cta">
-          <i data-lucide="smartphone" style="width:18px;height:18px;"></i>
-          Download Free App
+          <i class="ph-bold ph-device-mobile-camera" style="font-size:18px;"></i>
+          Download App
         </a>
       </li>
     </ul>
@@ -684,7 +681,7 @@
     <div class="hero-bg"></div>
     <div style="position: relative; z-index: 1;">
       <div class="hero-badge float">
-        <i data-lucide="map-pin" style="width:16px;height:16px;color:#F5C842;"></i>
+        <i class="ph-bold ph-map-pin" style="font-size:16px;color:#F5C842;"></i>
         Built for Ghana
       </div>
       <img
@@ -700,12 +697,12 @@
       </p>
       <div class="hero-buttons">
         <a href="#download" class="btn-primary">
-          <i data-lucide="smartphone" style="width:18px;height:18px;"></i>
+          <i class="ph-bold ph-device-mobile-camera" style="font-size:20px;"></i>
           Download Free App
         </a>
         <a href="#how" class="btn-secondary">
           See How It Works
-          <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
+          <i class="ph-bold ph-arrow-right" style="font-size:20px;"></i>
         </a>
       </div>
       <div class="hero-stats">
@@ -739,42 +736,42 @@
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon" style="background: rgba(245,200,66,0.1);">
-          <i data-lucide="dumbbell" style="width:28px;height:28px;color:#F5C842;"></i>
+          <i class="ph-bold ph-barbell" style="font-size:32px;color:#F5C842;"></i>
         </div>
         <h3>Book Gym Classes</h3>
         <p>Browse and book gym classes at top gyms across Ghana. Pay with MTN MoMo or card instantly.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon" style="background: rgba(139,92,246,0.1);">
-          <i data-lucide="user-check" style="width:28px;height:28px;color:#8B5CF6;"></i>
+          <i class="ph-bold ph-user-check" style="font-size:32px;color:#8B5CF6;"></i>
         </div>
         <h3>Find Trainers</h3>
         <p>Connect with certified personal trainers near you. Book 1-on-1 sessions in-person or online.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon" style="background: rgba(48,209,88,0.1);">
-          <i data-lucide="calendar-check" style="width:28px;height:28px;color:#30D158;"></i>
+          <i class="ph-bold ph-calendar-check" style="font-size:32px;color:#30D158;"></i>
         </div>
         <h3>Smart Scheduling</h3>
         <p>See real-time availability. Book slots that fit your schedule. Get reminders before sessions.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon" style="background: rgba(6,182,212,0.1);">
-          <i data-lucide="message-circle" style="width:28px;height:28px;color:#06B6D4;"></i>
+          <i class="ph-bold ph-chat-circle-dots" style="font-size:32px;color:#06B6D4;"></i>
         </div>
         <h3>Chat with Trainers</h3>
         <p>Message your trainer directly in the app. Get advice, ask questions, stay motivated.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon" style="background: rgba(245,200,66,0.1);">
-          <i data-lucide="salad" style="width:28px;height:28px;color:#F5C842;"></i>
+          <i class="ph-bold ph-fork-knife" style="font-size:32px;color:#F5C842;"></i>
         </div>
         <h3>Meal Planning</h3>
         <p>Get daily meal plans tailored to your fitness goal. Breakfast, lunch, dinner and snacks.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon" style="background: rgba(239,68,68,0.1);">
-          <i data-lucide="trending-up" style="width:28px;height:28px;color:#EF4444;"></i>
+          <i class="ph-bold ph-chart-line-up" style="font-size:32px;color:#EF4444;"></i>
         </div>
         <h3>Track Progress</h3>
         <p>Monitor your steps, workouts and fitness milestones. Watch yourself improve daily.</p>
@@ -820,42 +817,42 @@
     <div class="portals-grid">
       <div class="portal-card" style="background: rgba(245,200,66,0.05); border-color: rgba(245,200,66,0.2);">
         <div style="margin-bottom: 16px;">
-          <i data-lucide="building-2" style="width:40px;height:40px;color:#F5C842;"></i>
+          <i class="ph-bold ph-buildings" style="font-size:48px;color:#F5C842;"></i>
         </div>
         <h3>Gym Owners</h3>
         <p>List your gym, manage classes, track memberships, and receive payments directly. Get discovered by fitness enthusiasts in Ghana.</p>
         <ul style="list-style: none; margin-bottom: 20px;">
-          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 8px;">✓ List unlimited classes</li>
-          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 8px;">✓ Real-time booking management</li>
-          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; display: flex; gap: 8px;">✓ 90% of every booking</li>
+          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 8px; align-items: center;"><i class="ph-bold ph-check-circle" style="font-size:16px;color:#30D158;flex-shrink:0;"></i> List unlimited classes</li>
+          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 8px; align-items: center;"><i class="ph-bold ph-check-circle" style="font-size:16px;color:#30D158;flex-shrink:0;"></i> Real-time booking management</li>
+          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; display: flex; gap: 8px; align-items: center;"><i class="ph-bold ph-check-circle" style="font-size:16px;color:#30D158;flex-shrink:0;"></i> 90% of every booking</li>
         </ul>
-        <a href="https://gym.sankofafit.com" class="portal-link" style="background: rgba(245,200,66,0.15); color: #F5C842; border: 1px solid rgba(245,200,66,0.3);">Open Gym Dashboard →</a>
+        <a href="https://gym.sankofafit.com" class="portal-link" style="background: rgba(245,200,66,0.15); color: #F5C842; border: 1px solid rgba(245,200,66,0.3);">Open Gym Dashboard <i class="ph-bold ph-arrow-right" style="font-size:16px;"></i></a>
       </div>
       <div class="portal-card" style="background: rgba(139,92,246,0.05); border-color: rgba(139,92,246,0.2);">
         <div style="margin-bottom: 16px;">
-          <i data-lucide="user-check" style="width:40px;height:40px;color:#8B5CF6;"></i>
+          <i class="ph-bold ph-user-circle-check" style="font-size:48px;color:#8B5CF6;"></i>
         </div>
         <h3>Personal Trainers</h3>
         <p>Create your profile, set your availability, and let clients book sessions with you. Build your client base on Sankofa Fit.</p>
         <ul style="list-style: none; margin-bottom: 20px;">
-          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 8px;">✓ Set your own schedule</li>
-          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 8px;">✓ Chat with clients</li>
-          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; display: flex; gap: 8px;">✓ 85% of every session</li>
+          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 8px; align-items: center;"><i class="ph-bold ph-check-circle" style="font-size:16px;color:#30D158;flex-shrink:0;"></i> Set your own schedule</li>
+          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 8px; align-items: center;"><i class="ph-bold ph-check-circle" style="font-size:16px;color:#30D158;flex-shrink:0;"></i> Chat with clients</li>
+          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; display: flex; gap: 8px; align-items: center;"><i class="ph-bold ph-check-circle" style="font-size:16px;color:#30D158;flex-shrink:0;"></i> 85% of every session</li>
         </ul>
-        <a href="https://trainer.sankofafit.com" class="portal-link" style="background: rgba(139,92,246,0.15); color: #8B5CF6; border: 1px solid rgba(139,92,246,0.3);">Open Trainer Dashboard →</a>
+        <a href="https://trainer.sankofafit.com" class="portal-link" style="background: rgba(139,92,246,0.15); color: #8B5CF6; border: 1px solid rgba(139,92,246,0.3);">Open Trainer Dashboard <i class="ph-bold ph-arrow-right" style="font-size:16px;"></i></a>
       </div>
       <div class="portal-card" style="background: rgba(48,209,88,0.05); border-color: rgba(48,209,88,0.15);">
         <div style="margin-bottom: 16px;">
-          <i data-lucide="smartphone" style="width:40px;height:40px;color:#30D158;"></i>
+          <i class="ph-bold ph-device-mobile-camera" style="font-size:48px;color:#30D158;"></i>
         </div>
         <h3>Fitness Enthusiasts</h3>
         <p>Download the free app and start your fitness journey today. Book classes, find trainers, and track your progress.</p>
         <ul style="list-style: none; margin-bottom: 20px;">
-          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 8px;">✓ Free to download</li>
-          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 8px;">✓ Pay with MTN MoMo</li>
-          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; display: flex; gap: 8px;">✓ Cancel anytime</li>
+          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 8px; align-items: center;"><i class="ph-bold ph-check-circle" style="font-size:16px;color:#30D158;flex-shrink:0;"></i> Free to download</li>
+          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 8px; align-items: center;"><i class="ph-bold ph-check-circle" style="font-size:16px;color:#30D158;flex-shrink:0;"></i> Pay with MTN MoMo</li>
+          <li style="color: #9AA5B9; font-size: 13px; padding: 6px 0; display: flex; gap: 8px; align-items: center;"><i class="ph-bold ph-check-circle" style="font-size:16px;color:#30D158;flex-shrink:0;"></i> Cancel anytime</li>
         </ul>
-        <a href="#download" class="portal-link" style="background: rgba(48,209,88,0.15); color: #30D158; border: 1px solid rgba(48,209,88,0.3);">Download App →</a>
+        <a href="#download" class="portal-link" style="background: rgba(48,209,88,0.15); color: #30D158; border: 1px solid rgba(48,209,88,0.3);">Download App <i class="ph-bold ph-arrow-right" style="font-size:16px;"></i></a>
       </div>
     </div>
   </section>
@@ -871,10 +868,10 @@
           <div class="pricing-price">GHS 0</div>
           <div class="pricing-period">Forever free</div>
           <ul class="pricing-features">
-            <li>Browse gyms and trainers</li>
-            <li>Basic workout plans</li>
-            <li>Step counter</li>
-            <li>Daily meal plans</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Browse gyms and trainers</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Basic workout plans</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Step counter</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Daily meal plans</li>
           </ul>
           <a href="#download" class="pricing-btn" style="background: rgba(255,255,255,0.08); color: white; border: 1px solid rgba(255,255,255,0.12);">Get Started Free</a>
         </div>
@@ -884,11 +881,11 @@
           <div class="pricing-price" style="color: var(--gold);">GHS 70</div>
           <div class="pricing-period">per month</div>
           <ul class="pricing-features">
-            <li>Everything in Free</li>
-            <li>Book gym classes</li>
-            <li>Book trainer sessions</li>
-            <li>Real-time chat</li>
-            <li>Progress tracking</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Everything in Free</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Book gym classes</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Book trainer sessions</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Real-time chat</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Progress tracking</li>
           </ul>
           <a href="#download" class="pricing-btn" style="background: var(--gold); color: var(--navy);">Start Pro Plan</a>
         </div>
@@ -897,11 +894,11 @@
           <div class="pricing-price">GHS 140</div>
           <div class="pricing-period">per month</div>
           <ul class="pricing-features">
-            <li>Everything in Pro</li>
-            <li>Priority trainer matching</li>
-            <li>Unlimited bookings</li>
-            <li>Nutrition coaching</li>
-            <li>Early access features</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Everything in Pro</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Priority trainer matching</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Unlimited bookings</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Nutrition coaching</li>
+            <li><i class="ph-bold ph-check-circle" style="font-size:18px;color:#30D158;flex-shrink:0;"></i> Early access features</li>
           </ul>
           <a href="#download" class="pricing-btn" style="background: rgba(139,92,246,0.2); color: #8B5CF6; border: 1px solid rgba(139,92,246,0.4);">Go Premium</a>
         </div>
@@ -917,11 +914,11 @@
       <p>Join thousands of Ghanaians on their fitness journey. Download free today.</p>
       <div class="hero-buttons">
         <a href="#" class="btn-primary">
-          <i data-lucide="apple" style="width:20px;height:20px;"></i>
+          <i class="ph-bold ph-apple-logo" style="font-size:22px;"></i>
           Download on App Store
         </a>
         <a href="#" class="btn-secondary">
-          <i data-lucide="play" style="width:20px;height:20px;"></i>
+          <i class="ph-bold ph-google-play-logo" style="font-size:22px;"></i>
           Get it on Google Play
         </a>
       </div>
@@ -939,6 +936,20 @@
             style="height: 36px; width: auto; object-fit: contain; margin-bottom: 8px; display: block;"
           />
           <p>Ghana's premier fitness platform. Connecting fitness enthusiasts with gyms and trainers across Ghana.</p>
+          <div style="display:flex;gap:12px;margin-top:16px;">
+            <a href="#" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.1);transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.12)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+              <i class="ph-bold ph-instagram-logo" style="font-size:18px;"></i>
+            </a>
+            <a href="#" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.1);transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.12)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+              <i class="ph-bold ph-x-logo" style="font-size:18px;"></i>
+            </a>
+            <a href="#" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.1);transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.12)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+              <i class="ph-bold ph-tiktok-logo" style="font-size:18px;"></i>
+            </a>
+            <a href="#" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.1);transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.12)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+              <i class="ph-bold ph-facebook-logo" style="font-size:18px;"></i>
+            </a>
+          </div>
         </div>
         <div class="footer-col">
           <h4>App</h4>
@@ -962,7 +973,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 Sankofa Fit. All rights reserved. Made with <i data-lucide="heart" style="width:14px;height:14px;color:#F5C842;display:inline;vertical-align:middle;"></i> in Ghana</p>
+        <p>© 2025 Sankofa Fit. All rights reserved. Made with <i class="ph-bold ph-heart" style="font-size:14px;color:#F5C842;vertical-align:middle;"></i> in Ghana</p>
         <p style="color: #F5C842; font-weight: 700;">Reclaim Your Strength.</p>
       </div>
     </div>
@@ -999,8 +1010,6 @@
     );
 
     document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
-
-    lucide.createIcons();
   </script>
 </body>
 </html>
