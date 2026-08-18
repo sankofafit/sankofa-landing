@@ -40,15 +40,15 @@
 
     /* Light mode variables */
     [data-theme="light"] {
-      --bg: #F8FAFF;
-      --bg-card: rgba(255,255,255,0.9);
-      --bg-nav: rgba(248,250,255,0.95);
-      --bg-section: rgba(27,47,107,0.04);
-      --border: rgba(27,47,107,0.08);
-      --border-card: rgba(27,47,107,0.1);
-      --text-primary: #0D1B45;
-      --text-secondary: #4A5568;
-      --text-muted: #718096;
+      --bg: #EEF2FF;
+      --bg-card: #FFFFFF;
+      --bg-nav: rgba(238,242,255,0.97);
+      --bg-section: #E4E9F7;
+      --border: rgba(27,47,107,0.12);
+      --border-card: rgba(27,47,107,0.15);
+      --text-primary: #0A1628;
+      --text-secondary: #2D3E6B;
+      --text-muted: #4A5A8A;
     }
 
     html {
@@ -614,28 +614,92 @@
     }
 
     /* Light mode specific overrides */
-    [data-theme="light"] .btn-secondary {
-      background: rgba(27,47,107,0.08);
-      color: #1B2F6B;
-      border: 1px solid rgba(27,47,107,0.15);
+    [data-theme="light"] .hero h1 {
+      color: #0A1628;
+      text-shadow: none;
     }
 
-    [data-theme="light"] .btn-secondary:hover {
-      background: rgba(27,47,107,0.12);
+    [data-theme="light"] .section-title {
+      color: #0A1628;
+      font-weight: 900;
     }
 
-    [data-theme="light"] .hero-bg {
-      background:
-        radial-gradient(
-          ellipse 80% 60% at 50% 0%,
-          rgba(27,47,107,0.08) 0%,
-          transparent 70%
-        );
+    [data-theme="light"] .step h3 {
+      color: #0A1628;
+      font-weight: 800;
+    }
+
+    [data-theme="light"] .feature-card h3 {
+      color: #0A1628;
+      font-weight: 800;
+    }
+
+    [data-theme="light"] .portal-card h3 {
+      color: #0A1628;
+      font-weight: 800;
+    }
+
+    [data-theme="light"] .pricing-card h3 {
+      color: #0A1628;
+    }
+
+    [data-theme="light"] .pricing-price {
+      color: #0A1628;
+    }
+
+    [data-theme="light"] .hero-stat-value {
+      color: #0A1628;
+    }
+
+    [data-theme="light"] .nav-logo {
+      color: #0A1628;
+    }
+
+    [data-theme="light"] .footer-brand p {
+      color: #2D3E6B;
+    }
+
+    [data-theme="light"] .footer-col a {
+      color: #2D3E6B;
+    }
+
+    [data-theme="light"] .footer-bottom p {
+      color: #4A5A8A;
+    }
+
+    [data-theme="light"] .feature-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(27,47,107,0.12);
+      box-shadow: 0 2px 12px rgba(27,47,107,0.06);
     }
 
     [data-theme="light"] .feature-card:hover {
       border-color: rgba(245,200,66,0.5);
       box-shadow: 0 8px 32px rgba(27,47,107,0.08);
+    }
+
+    [data-theme="light"] .pricing-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(27,47,107,0.12);
+      box-shadow: 0 2px 12px rgba(27,47,107,0.06);
+    }
+
+    [data-theme="light"] .portal-card {
+      background: #FFFFFF !important;
+      box-shadow: 0 2px 12px rgba(27,47,107,0.06);
+      border-color: rgba(27,47,107,0.12) !important;
+    }
+
+    [data-theme="light"] .how-section {
+      background: #E4E9F7;
+    }
+
+    [data-theme="light"] .hero-bg {
+      background: radial-gradient(
+        ellipse 80% 60% at 50% 0%,
+        rgba(27,47,107,0.12) 0%,
+        transparent 70%
+      );
     }
 
     [data-theme="light"] nav {
@@ -647,36 +711,102 @@
       box-shadow: 0 1px 20px rgba(27,47,107,0.08);
     }
 
-    [data-theme="light"] .nav-logo {
-      color: #0D1B45;
+    [data-theme="light"] footer {
+      background: #1B2F6B;
+      border-top: none;
     }
 
-    [data-theme="light"] .hero h1 {
-      color: #0D1B45;
+    [data-theme="light"] footer * {
+      color: rgba(255,255,255,0.8) !important;
     }
 
-    [data-theme="light"] .section-title {
-      color: #0D1B45;
+    [data-theme="light"] footer .nav-logo,
+    [data-theme="light"] footer h4 {
+      color: white !important;
     }
 
-    [data-theme="light"] .step h3 {
-      color: #0D1B45;
+    [data-theme="light"] footer a:hover {
+      color: #F5C842 !important;
     }
 
-    [data-theme="light"] .portal-card h3 {
-      color: #0D1B45;
+    [data-theme="light"] footer img {
+      filter: brightness(10);
+    }
+
+    [data-theme="light"] footer .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    [data-theme="light"] nav img {
+      background: #1B2F6B;
+      padding: 6px 10px;
+      border-radius: 8px;
+    }
+
+    [data-theme="light"] .hero img {
+      background: #1B2F6B;
+      padding: 10px 16px;
+      border-radius: 12px;
+    }
+
+    [data-theme="light"] .section-badge {
+      background: rgba(27,47,107,0.1);
+      border: 1px solid rgba(27,47,107,0.2);
+      color: #1B2F6B;
+    }
+
+    [data-theme="light"] .hero-badge {
+      background: rgba(27,47,107,0.08);
+      border: 1px solid rgba(27,47,107,0.2);
+      color: #1B2F6B;
+    }
+
+    [data-theme="light"] .btn-secondary {
+      background: #1B2F6B;
+      color: white;
+      border: none;
+    }
+
+    [data-theme="light"] .btn-secondary:hover {
+      background: #0D1B45;
+    }
+
+    [data-theme="light"] .cta-section {
+      background: #1B2F6B;
+    }
+
+    [data-theme="light"] .cta-section h2 {
+      color: white;
+    }
+
+    [data-theme="light"] .cta-section p {
+      color: rgba(255,255,255,0.7);
+    }
+
+    [data-theme="light"] .cta-section .section-badge {
+      background: rgba(245,200,66,0.2);
+      border-color: rgba(245,200,66,0.4);
+      color: #F5C842;
+    }
+
+    [data-theme="light"] .pricing-card.featured {
+      background: #1B2F6B;
+      border-color: var(--gold);
+    }
+
+    [data-theme="light"] .pricing-card.featured .pricing-name,
+    [data-theme="light"] .pricing-card.featured .pricing-period,
+    [data-theme="light"] .pricing-card.featured .pricing-features li {
+      color: rgba(255,255,255,0.7) !important;
+    }
+
+    [data-theme="light"] .pricing-card.featured h3,
+    [data-theme="light"] .pricing-card.featured .pricing-price {
+      color: white !important;
     }
 
     [data-theme="light"] .pricing-name {
-      color: #4A5568;
-    }
-
-    [data-theme="light"] .footer-bottom {
-      border-top: 1px solid rgba(27,47,107,0.1);
-    }
-
-    [data-theme="light"] .footer-bottom p {
-      color: #718096;
+      color: #4A5A8A;
     }
 
     .fade-in {
