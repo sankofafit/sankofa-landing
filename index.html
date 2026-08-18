@@ -7,6 +7,7 @@
   <meta name="description" content="Ghana's premier fitness app. Book gym classes, find personal trainers, and track your fitness journey.">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
   <style>
     * {
@@ -96,6 +97,9 @@
       border-radius: 10px;
       text-decoration: none;
       font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
 
     .menu-toggle {
@@ -659,20 +663,30 @@
       alt="Sankofa Fit"
       style="height: 40px; width: auto; object-fit: contain;"
     />
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <i data-lucide="menu" style="width:24px;height:24px;"></i>
+    </button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#features">Features</a></li>
       <li><a href="#how">How it Works</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="#portals">For Gyms</a></li>
-      <li><a href="#download" class="nav-cta">Download App</a></li>
+      <li>
+        <a href="#download" class="nav-cta">
+          <i data-lucide="smartphone" style="width:18px;height:18px;"></i>
+          Download Free App
+        </a>
+      </li>
     </ul>
   </nav>
 
   <section class="hero">
     <div class="hero-bg"></div>
     <div style="position: relative; z-index: 1;">
-      <div class="hero-badge float">🇬🇭 Built for Ghana</div>
+      <div class="hero-badge float">
+        <i data-lucide="map-pin" style="width:16px;height:16px;color:#F5C842;"></i>
+        Built for Ghana
+      </div>
       <img
         src="/logo.png"
         alt="Sankofa Fit"
@@ -685,8 +699,14 @@
         personal trainers, and track your fitness journey — all in one app.
       </p>
       <div class="hero-buttons">
-        <a href="#download" class="btn-primary">📱 Download Free App</a>
-        <a href="#how" class="btn-secondary">See How It Works →</a>
+        <a href="#download" class="btn-primary">
+          <i data-lucide="smartphone" style="width:18px;height:18px;"></i>
+          Download Free App
+        </a>
+        <a href="#how" class="btn-secondary">
+          See How It Works
+          <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
+        </a>
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
@@ -702,7 +722,7 @@
           <span class="hero-stat-label">To Get Started</span>
         </div>
         <div class="hero-stat">
-          <span class="hero-stat-value">🇬🇭</span>
+          <span class="hero-stat-value">GH</span>
           <span class="hero-stat-label">Ghana Only</span>
         </div>
       </div>
@@ -718,32 +738,44 @@
     </p>
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon" style="background: rgba(245,200,66,0.1);">🏋️</div>
+        <div class="feature-icon" style="background: rgba(245,200,66,0.1);">
+          <i data-lucide="dumbbell" style="width:28px;height:28px;color:#F5C842;"></i>
+        </div>
         <h3>Book Gym Classes</h3>
         <p>Browse and book gym classes at top gyms across Ghana. Pay with MTN MoMo or card instantly.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background: rgba(139,92,246,0.1);">🧑‍💼</div>
+        <div class="feature-icon" style="background: rgba(139,92,246,0.1);">
+          <i data-lucide="user-check" style="width:28px;height:28px;color:#8B5CF6;"></i>
+        </div>
         <h3>Find Trainers</h3>
         <p>Connect with certified personal trainers near you. Book 1-on-1 sessions in-person or online.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background: rgba(48,209,88,0.1);">📅</div>
+        <div class="feature-icon" style="background: rgba(48,209,88,0.1);">
+          <i data-lucide="calendar-check" style="width:28px;height:28px;color:#30D158;"></i>
+        </div>
         <h3>Smart Scheduling</h3>
         <p>See real-time availability. Book slots that fit your schedule. Get reminders before sessions.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background: rgba(6,182,212,0.1);">💬</div>
+        <div class="feature-icon" style="background: rgba(6,182,212,0.1);">
+          <i data-lucide="message-circle" style="width:28px;height:28px;color:#06B6D4;"></i>
+        </div>
         <h3>Chat with Trainers</h3>
         <p>Message your trainer directly in the app. Get advice, ask questions, stay motivated.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background: rgba(245,200,66,0.1);">🥗</div>
+        <div class="feature-icon" style="background: rgba(245,200,66,0.1);">
+          <i data-lucide="salad" style="width:28px;height:28px;color:#F5C842;"></i>
+        </div>
         <h3>Meal Planning</h3>
         <p>Get daily meal plans tailored to your fitness goal. Breakfast, lunch, dinner and snacks.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon" style="background: rgba(239,68,68,0.1);">📊</div>
+        <div class="feature-icon" style="background: rgba(239,68,68,0.1);">
+          <i data-lucide="trending-up" style="width:28px;height:28px;color:#EF4444;"></i>
+        </div>
         <h3>Track Progress</h3>
         <p>Monitor your steps, workouts and fitness milestones. Watch yourself improve daily.</p>
       </div>
@@ -773,7 +805,7 @@
         <div class="step">
           <div class="step-number">4</div>
           <h3>Reclaim Your Strength</h3>
-          <p>Show up, work hard, and track your progress. You've got this! 💪</p>
+          <p>Show up, work hard, and track your progress. You've got this!</p>
         </div>
       </div>
     </div>
@@ -787,7 +819,9 @@
     </p>
     <div class="portals-grid">
       <div class="portal-card" style="background: rgba(245,200,66,0.05); border-color: rgba(245,200,66,0.2);">
-        <div style="font-size: 36px; margin-bottom: 16px;">🏢</div>
+        <div style="margin-bottom: 16px;">
+          <i data-lucide="building-2" style="width:40px;height:40px;color:#F5C842;"></i>
+        </div>
         <h3>Gym Owners</h3>
         <p>List your gym, manage classes, track memberships, and receive payments directly. Get discovered by fitness enthusiasts in Ghana.</p>
         <ul style="list-style: none; margin-bottom: 20px;">
@@ -798,7 +832,9 @@
         <a href="https://gym.sankofafit.com" class="portal-link" style="background: rgba(245,200,66,0.15); color: #F5C842; border: 1px solid rgba(245,200,66,0.3);">Open Gym Dashboard →</a>
       </div>
       <div class="portal-card" style="background: rgba(139,92,246,0.05); border-color: rgba(139,92,246,0.2);">
-        <div style="font-size: 36px; margin-bottom: 16px;">🧑‍💼</div>
+        <div style="margin-bottom: 16px;">
+          <i data-lucide="user-check" style="width:40px;height:40px;color:#8B5CF6;"></i>
+        </div>
         <h3>Personal Trainers</h3>
         <p>Create your profile, set your availability, and let clients book sessions with you. Build your client base on Sankofa Fit.</p>
         <ul style="list-style: none; margin-bottom: 20px;">
@@ -809,7 +845,9 @@
         <a href="https://trainer.sankofafit.com" class="portal-link" style="background: rgba(139,92,246,0.15); color: #8B5CF6; border: 1px solid rgba(139,92,246,0.3);">Open Trainer Dashboard →</a>
       </div>
       <div class="portal-card" style="background: rgba(48,209,88,0.05); border-color: rgba(48,209,88,0.15);">
-        <div style="font-size: 36px; margin-bottom: 16px;">📱</div>
+        <div style="margin-bottom: 16px;">
+          <i data-lucide="smartphone" style="width:40px;height:40px;color:#30D158;"></i>
+        </div>
         <h3>Fitness Enthusiasts</h3>
         <p>Download the free app and start your fitness journey today. Book classes, find trainers, and track your progress.</p>
         <ul style="list-style: none; margin-bottom: 20px;">
@@ -878,8 +916,14 @@
       <h2>Ready to reclaim<br>your strength?</h2>
       <p>Join thousands of Ghanaians on their fitness journey. Download free today.</p>
       <div class="hero-buttons">
-        <a href="#" class="btn-primary">🍎 Download on App Store</a>
-        <a href="#" class="btn-secondary">🤖 Get it on Google Play</a>
+        <a href="#" class="btn-primary">
+          <i data-lucide="apple" style="width:20px;height:20px;"></i>
+          Download on App Store
+        </a>
+        <a href="#" class="btn-secondary">
+          <i data-lucide="play" style="width:20px;height:20px;"></i>
+          Get it on Google Play
+        </a>
       </div>
       <p style="margin-top: 16px; font-size: 13px; color: var(--text);">Free to download · Pay with MoMo · Cancel anytime</p>
     </div>
@@ -918,7 +962,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 Sankofa Fit. All rights reserved. Made with 💛 in Ghana 🇬🇭</p>
+        <p>© 2025 Sankofa Fit. All rights reserved. Made with <i data-lucide="heart" style="width:14px;height:14px;color:#F5C842;display:inline;vertical-align:middle;"></i> in Ghana</p>
         <p style="color: #F5C842; font-weight: 700;">Reclaim Your Strength.</p>
       </div>
     </div>
@@ -955,6 +999,8 @@
     );
 
     document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+
+    lucide.createIcons();
   </script>
 </body>
 </html>
