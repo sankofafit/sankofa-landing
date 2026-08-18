@@ -729,24 +729,8 @@
       color: #F5C842 !important;
     }
 
-    [data-theme="light"] footer img {
-      filter: brightness(10);
-    }
-
     [data-theme="light"] footer .footer-bottom {
       border-top: 1px solid rgba(255,255,255,0.1);
-    }
-
-    [data-theme="light"] nav img {
-      background: #1B2F6B;
-      padding: 6px 10px;
-      border-radius: 8px;
-    }
-
-    [data-theme="light"] .hero img {
-      background: #1B2F6B;
-      padding: 10px 16px;
-      border-radius: 12px;
     }
 
     [data-theme="light"] .section-badge {
@@ -879,11 +863,13 @@
 <body>
 
   <nav id="navbar">
-    <img
-      src="/logo.png"
-      alt="Sankofa Fit"
-      style="height: 40px; width: auto; object-fit: contain;"
-    />
+    <div id="navLogo" style="background: #1B2F6B; padding: 6px 14px; border-radius: 10px; display: inline-flex; align-items: center;">
+      <img
+        src="/logo.png"
+        alt="Sankofa Fit"
+        style="height: 32px; width: auto; object-fit: contain; display: block;"
+      />
+    </div>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
       <i class="ph-bold ph-list" style="font-size:24px;"></i>
     </button>
@@ -920,12 +906,14 @@
         <i class="ph-bold ph-map-pin" style="font-size:16px;color:#F5C842;"></i>
         Built for Ghana
       </div>
-      <img
-        src="/logo.png"
-        alt="Sankofa Fit"
-        style="height: 80px; width: auto; object-fit: contain; margin-bottom: 24px; display: block; margin-left: auto; margin-right: auto;"
-        class="float"
-      />
+      <div style="display: inline-block; background: #1B2F6B; padding: 16px 28px; border-radius: 20px; margin-bottom: 24px;">
+        <img
+          src="/logo.png"
+          alt="Sankofa Fit"
+          style="height: 72px; width: auto; object-fit: contain; display: block;"
+          class="float"
+        />
+      </div>
       <h1>Reclaim Your<br><span>Strength.</span></h1>
       <p>
         Ghana's premier fitness platform. Book gym classes, find certified
@@ -1166,11 +1154,13 @@
     <div class="footer-inner">
       <div class="footer-top">
         <div class="footer-brand">
-          <img
-            src="/logo.png"
-            alt="Sankofa Fit"
-            style="height: 36px; width: auto; object-fit: contain; margin-bottom: 8px; display: block;"
-          />
+          <div style="display: inline-block; background: #1B2F6B; padding: 8px 16px; border-radius: 10px; margin-bottom: 8px;">
+            <img
+              src="/logo.png"
+              alt="Sankofa Fit"
+              style="height: 32px; width: auto; object-fit: contain; display: block;"
+            />
+          </div>
           <p>Ghana's premier fitness platform. Connecting fitness enthusiasts with gyms and trainers across Ghana.</p>
           <div style="display:flex;gap:12px;margin-top:16px;">
             <a href="#" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;border:1px solid rgba(255,255,255,0.1);transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.12)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
