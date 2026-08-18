@@ -69,7 +69,7 @@
       left: 0;
       right: 0;
       z-index: 100;
-      padding: 16px 24px;
+      padding: 12px 32px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -98,8 +98,17 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 32px;
+      gap: 28px;
       list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-left: auto;
     }
 
     .nav-links a {
@@ -831,6 +840,19 @@
         padding: 14px 24px;
       }
 
+      nav {
+        padding: 12px 20px;
+        flex-wrap: wrap;
+      }
+
+      .nav-right {
+        gap: 10px;
+      }
+
+      .nav-right .nav-cta span.nav-cta-label {
+        display: none;
+      }
+
       .menu-toggle {
         display: block;
       }
@@ -863,48 +885,54 @@
 <body>
 
   <nav id="navbar">
-    <div id="navLogo" style="background: #1B2F6B; padding: 6px 14px; border-radius: 10px; display: inline-flex; align-items: center;">
-      <img
-        src="/logo.png"
-        alt="Sankofa Fit"
-        style="height: 32px; width: auto; object-fit: contain; display: block;"
-      />
+    <div style="display: flex; align-items: center;">
+      <div style="background: #1B2F6B; padding: 6px 14px; border-radius: 10px; display: inline-flex; align-items: center;">
+        <img
+          src="/logo.png"
+          alt="Sankofa Fit"
+          style="height: 32px; width: auto; object-fit: contain; display: block;"
+        />
+      </div>
     </div>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-      <i class="ph-bold ph-list" style="font-size:24px;"></i>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#features">Features</a></li>
-      <li><a href="#how">How it Works</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#portals">For Gyms</a></li>
-      <li style="display: flex; align-items: center;">
-        <button
-          id="themeToggle"
-          onclick="toggleTheme()"
-          style="background: var(--bg-card); border: 1px solid var(--border-card); border-radius: 50px; width: 52px; height: 28px; cursor: pointer; position: relative; transition: all 0.3s; display: flex; align-items: center; padding: 3px;"
-          aria-label="Toggle theme"
-        >
-          <i class="ph-bold ph-sun" style="position: absolute; left: 6px; font-size: 14px; color: #F5C842; transition: opacity 0.3s;" id="sunIcon"></i>
-          <i class="ph-bold ph-moon" style="position: absolute; right: 6px; font-size: 14px; color: #6B7B99; transition: opacity 0.3s;" id="moonIcon"></i>
-          <div id="toggleKnob" style="width: 22px; height: 22px; border-radius: 50%; background: var(--gold); transition: transform 0.3s; transform: translateX(0); position: relative; z-index: 1;"></div>
-        </button>
-      </li>
-      <li>
-        <a href="#download" class="nav-cta">
-          <i class="ph-bold ph-device-mobile-camera" style="font-size:18px;"></i>
-          Download App
-        </a>
-      </li>
-    </ul>
+
+    <div class="nav-right">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <i class="ph-bold ph-list" style="font-size:24px;"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How it Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#portals">For Gyms</a></li>
+      </ul>
+
+      <button
+        id="themeToggle"
+        onclick="toggleTheme()"
+        style="background: var(--bg-card); border: 1px solid var(--border-card); border-radius: 50px; width: 52px; height: 28px; cursor: pointer; position: relative; transition: all 0.3s; display: flex; align-items: center; padding: 3px; flex-shrink: 0;"
+        aria-label="Toggle theme"
+      >
+        <i class="ph-bold ph-sun" style="position: absolute; left: 6px; font-size: 14px; color: #F5C842; transition: opacity 0.3s;" id="sunIcon"></i>
+        <i class="ph-bold ph-moon" style="position: absolute; right: 6px; font-size: 14px; color: #6B7B99; transition: opacity 0.3s;" id="moonIcon"></i>
+        <div id="toggleKnob" style="width: 22px; height: 22px; border-radius: 50%; background: var(--gold); transition: transform 0.3s; transform: translateX(0); position: relative; z-index: 1;"></div>
+      </button>
+
+      <a href="#download" class="nav-cta">
+        <i class="ph-bold ph-device-mobile-camera" style="font-size:18px;"></i>
+        <span class="nav-cta-label">Download App</span>
+      </a>
+    </div>
   </nav>
 
   <section class="hero">
     <div class="hero-bg"></div>
-    <div style="position: relative; z-index: 1;">
-      <div class="hero-badge float">
-        <i class="ph-bold ph-map-pin" style="font-size:16px;color:#F5C842;"></i>
-        Built for Ghana
+    <div style="position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 800px; margin: 0 auto;">
+      <div style="display: flex; justify-content: center; margin-bottom: 24px; width: 100%;">
+        <div class="hero-badge float">
+          <i class="ph-bold ph-map-pin" style="font-size:16px;color:#F5C842;"></i>
+          Built for Ghana
+        </div>
       </div>
       <div style="display: inline-block; background: #1B2F6B; padding: 16px 28px; border-radius: 20px; margin-bottom: 24px;">
         <img
